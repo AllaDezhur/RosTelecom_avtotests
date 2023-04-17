@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+"""Локаторы для странице авторизации"""
 class AutoPageLoc:
     LOCATOR_PHONE_TAB=(By.ID, 't-btn-tab-phone')
     LOCATOR_PHONE_FIELD = (By.XPATH, '//span[contains(text(),"Мобильный телефон")]')
@@ -21,7 +21,6 @@ class AutoPageLoc:
     LOCATOR_ERROR_MESS = (By.XPATH, '//span[contains(@class, "rt-input-container__meta")]')
     LOCATOR_REG_TAB = (By.ID, 'kc-register')
     """Локаторы для соц.сетей"""
-
     LOCATOR_VK_TAB = (By.ID, 'oidc_vk')
     LOCATOR_VK_FIELD = (By.XPATH, '//b[text()="ВКонтакте"]')
     LOCATOR_OK_TAB = (By.ID, 'oidc_ok')
@@ -32,7 +31,7 @@ class AutoPageLoc:
     LOCATOR_GOOGLE_FIELD = (By.CLASS_NAME, 'kHn9Lb')
     LOCATOR_YANDEX_TAB = (By.ID, 'card-container__title')
     LOCATOR_YANDEX_FIELD = (By.CSS_SELECTOR,'.passp-add-account-page-title')
-
+    """Локаторы для страницы смены пароля"""
 class PassRecLoc:
     LOCATOR_PassRec_FIELD = (By.CLASS_NAME, 'card-container__title')
     LOCATOR_PHONE_TAB = (By.ID, 't-btn-tab-phone')
@@ -45,16 +44,9 @@ class PassRecLoc:
     LOCATOR_LS_FIELD = (By.ID, 'username')
     LOCATOR_BUTTON_CONTINUE = ( By.ID, 'reset')
     LOCATOR_CODE_FIELD = (By.CLASS_NAME, 'card-container__title')
-
+    """Локаторы для страницы регистрации"""
 class RegPageLoc:
     LOCATOR_REG_FIELD = (By.CLASS_NAME, 'card-container__title')
-    LOCATOR_NAME_FIELD = (By.NAME, 'firstName')
-    LOCATOR_LASTNAME_FIELD = (By.NAME, 'lastName')
-    LOCATOR_REGION_BUTTON = (By.CLASS_NAME,'rt-input__action')
-    LOCATOR_REGION_FIELD = (By.CLASS_NAME, 'rt-select.rt-select--search.register-form__dropdown')
-    LOCATOR_REGION_FIELD_SELECT = (By.CLASS_NAME, 'rt-select_list-wrapper. rt-select_list-wrapper--rounded')
-    LOCATOR_REG_MAIL_FIELD = (By.ID, 'address')
-    LOCATOR_REG_PASSWORD_FIELD = (By.ID, 'password')
     LOCATOR_REG_PASSWORD_CONFIRM_FIELD = (By.ID, 'password-confirm')
     LOCATOR_BUTTON_REGISTRATION = (By.NAME, 'register')
     LOCATOR_REGISTRATION_CODE_FIELD = (By.CLASS_NAME, 'card-container__title')
