@@ -47,7 +47,6 @@ class PassRecLoc:
     """Локаторы для страницы регистрации"""
 class RegPageLoc:
     LOCATOR_REG_FIELD = (By.CLASS_NAME, 'card-container__title')
-    LOCATOR_REG_PASSWORD_CONFIRM_FIELD = (By.ID, 'password-confirm')
     LOCATOR_BUTTON_REGISTRATION = (By.NAME, 'register')
     LOCATOR_REGISTRATION_CODE_FIELD = (By.CLASS_NAME, 'card-container__title')
 
